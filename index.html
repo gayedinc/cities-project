@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/cities.css">
+  <script src="assets/js/cities.js" defer></script>
+  <title>Şehirler</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Şehirler Projesi</h2>
+      <p>Sayfadaki butonlara tıklayarak çeşitli şehirleri keşfedebilir; ünlü yemekleri, turistik yerleri ve simgesel hayvanlarıyla öne çıkan şehirleri not alabilir ve şehirlerin plaka numaralarını tek ve çift olarak ayrılmış listeler halinde inceleyebilirsiniz.</p>
+    </div>
+    <div class="cities">
+      <!-- City List Start -->
+      <div class="city-list-content card">
+        <h3>Şehirler</h3>
+        <button class="btnCityList">Listele</button>
+        <ul class="citiesList"></ul>
+      </div>
+      <!-- Food List Start -->
+      <div class="food-list-content card">
+        <h3>Yemekleri Ünlü olan Şehirler</h3>
+        <button class="btnFoodList">Listele</button>
+        <ul class="famousFood"></ul>
+      </div>
+      <!-- Place List Start -->
+      <div class="place-list-content card">
+        <h3>Ünlü Yerleri Olan Şehirler</h3>
+        <button class="btnPlaceList" id="btnPlace">Listele</button>
+        <ul class="famousPlaceTxt" id="famousPlace"></ul>
+      </div>
+      <!-- Animal List Start -->
+      <div class="animal-list card">
+        <h3>Ünlü Hayvanları Olan Şehirler</h3>
+        <button class="btnAnimalList" id="btnAnimal">Listele</button>
+        <ul class="famousAnimalTxt" id="famousAnimal"></ul>
+      </div>
+      <!-- Plate Number List Start -->
+      <div class="plate-number-list card">
+        <h3>Şehir Plakaları</h3>
+        <button id="btnPlateList">Listele</button>
+      <div class="cityPlateTxt" id="cityPlate">
+        <ul id="oddPlateNumber"></ul>
+        <ul id="evenPlateNumber"></ul>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
